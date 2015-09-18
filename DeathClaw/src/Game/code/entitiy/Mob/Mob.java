@@ -1,0 +1,67 @@
+package Game.code.entitiy.Mob;
+
+import Game.code.entitiy.Entity;
+import Game.code.entitiy.projectile.Projectile;
+import Game.code.entitiy.projectile.WizardProjectile;
+import Game.code.graphics.Sprite;
+
+public abstract class Mob extends Entity {
+
+	protected Sprite sprite;
+	protected int dir = 0;
+	protected boolean moving = false;
+	
+
+	protected void move(int xa, int ya) {
+
+		if (xa != 0 && ya != 0) {
+			move(xa, 0);
+			move(0, ya);
+			return;
+		}
+
+		if (xa > 0)
+			dir = 1;
+
+		if (ya > 0)
+			dir = 2;
+		if (xa < 0)
+			dir = 3;
+		if (ya < 0)
+			dir = 0;
+
+		if (!collision(xa, ya)) {
+			x += xa;
+			y += ya;
+		}
+	}
+
+	public void update() {
+		
+
+	}
+
+	protected void shoot(int x, int y, double dir) {
+		Projectile p = new WizardProjectile(x, y, dir);
+		level.add(p);
+
+	}
+
+	public void render() {
+		
+	}
+
+	private boolean collision(int xa, int ya) {
+		boolean solid = false;
+		for (int c = 0; c < 4; c++) {
+			int yt = ((y + ya) + c % 2 * 5 + 10) / 16;
+			int xt = ((x + xa) + c / 2 * 15 - 8) / 16;
+			if (level.getTile(xt, yt).solid()) {
+				solid = true;
+			}
+		}
+
+		return solid;
+	}
+
+}
