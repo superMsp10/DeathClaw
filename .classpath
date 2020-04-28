@@ -7,8 +7,5 @@
 	</classpathentry>
 	<classpathentry kind="src" path="DeathClaw/src"/>
 	<classpathentry kind="src" path="DeathClaw/res"/>
-	<classpathentry kind="lib" path="DeathClaw PreAlpha_builds/0.6/app.jar"/>
-	<classpathentry kind="lib" path="DeathClaw PreAlpha_builds/0.7/app.jar"/>
-	<classpathentry kind="lib" path="DeathClaw PreAlpha_builds/0.8/0.8.jar"/>
 	<classpathentry kind="output" path="DeathClaw/bin"/>
 </classpath>

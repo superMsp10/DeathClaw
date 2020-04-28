@@ -1,0 +1,6 @@
+col_grass = 0xFF00FF00;
+col_wall = 0xFFB4B4B4;
+col_bwall = 0xFF555555;
+col_water = 0xFF0000FF;
+col_bush = 0xFF006414;
+col_floor = 0xFFA03C00;
