@@ -24,17 +24,17 @@ public class Sprite {
 	public static Sprite spawnBwall = new Sprite(16, 2, 1, Spritesheet.spawnTile);
 
 	//player stuffs
-	public static Sprite playerSide = new Sprite(32, 1, 4, Spritesheet.player);
-	public static Sprite playerBack = new Sprite(32, 0, 4, Spritesheet.player);
-	public static Sprite playerUp = new Sprite(32, 2, 4, Spritesheet.player);
+	public static Sprite playerSide = new Sprite(32, 1, 0, Spritesheet.player);
+	public static Sprite playerBack = new Sprite(32, 2, 0, Spritesheet.player);
+	public static Sprite playerUp = new Sprite(32, 0, 0, Spritesheet.player);
 
-	public static Sprite playerSide1 = new Sprite(32, 1, 5, Spritesheet.player);
-	public static Sprite playerBack1 = new Sprite(32, 0, 5, Spritesheet.player);
-	public static Sprite playerUp1 = new Sprite(32, 2, 5, Spritesheet.player);
+	public static Sprite playerSide1 = new Sprite(32, 1, 1, Spritesheet.player);
+	public static Sprite playerBack1 = new Sprite(32, 2, 1, Spritesheet.player);
+	public static Sprite playerUp1 = new Sprite(32, 2, 1, Spritesheet.player);
 
-	public static Sprite playerSide2 = new Sprite(32, 1, 6, Spritesheet.player);
-	public static Sprite playerBack2 = new Sprite(32, 0, 6, Spritesheet.player);
-	public static Sprite playerUp2 = new Sprite(32, 2, 6, Spritesheet.player);
+	public static Sprite playerSide2 = new Sprite(32, 1, 2, Spritesheet.player);
+	public static Sprite playerBack2 = new Sprite(32, 2, 2, Spritesheet.player);
+	public static Sprite playerUp2 = new Sprite(32, 2, 2, Spritesheet.player);
 	
 	//particles
 	public static Sprite particle1 = new Sprite(2,0xFC8200);
